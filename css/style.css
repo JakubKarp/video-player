@@ -1,0 +1,104 @@
+/*
+  darkgrey: rgb(30, 30, 30);
+  lightgrey: rgb(70, 70, 70);
+  lightblue: rgb(50, 170, 220);
+*/
+
+
+
+#player {
+  display: inline-block;
+  background-color: rgb(30, 30, 30);
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+button {
+  padding: 0;
+  
+}
+
+img {
+  background-color: rgb(70, 70, 70);
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+
+}
+
+img:hover {
+  background-color: aqua;
+}
+
+:focus {
+  outline: 0;
+  
+}
+
+img, #pbar-container, #sbar-container {
+  cursor: pointer;
+}
+
+
+/*Container*/
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+  
+#pbar-container {
+  background-color: rgb(70, 70, 70);
+}
+
+#pbar {
+  height: 5px;
+  width: 0%;
+  background-color: aqua;
+}
+
+
+
+#buttons-container {
+  height: 50px;
+  padding: 0;
+  margin-top: 4px;
+}
+
+#buttons-container > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px 10px;
+  
+}
+
+
+#time-field {
+  color: aqua;
+  cursor: default;
+}
+#sound-button {
+  margin-right: 4px;
+}
+
+#sbar-container {
+  margin-left: 0;
+  width: 100px;
+  height: 5px;
+  background-color: rgb(70, 70, 70);
+}
+#full-screen {
+  float: right;
+}
+
+#sbar {
+  height: 100%;
+  width: 0%;
+  background-color: aqua;
+}
