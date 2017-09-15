@@ -4,14 +4,22 @@
   lightblue: rgb(50, 170, 220);
 */
 
+* {
+  font-family: 'Share Tech Mono', monospace;
+}
 
+body {
+  background-color: aqua;
+}
 
 #player {
   display: inline-block;
   background-color: rgb(30, 30, 30);
   width: 60%;
   height: auto;
+  border-radius: 5px;
   margin-left: 20%;
+  margin-top: 3%;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -47,12 +55,32 @@ img, #pbar-container, #sbar-container {
 
 /*Container*/
 
+#video-container {
+   position: relative;
+  border-radius: 5px;
+ }
+
 video {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 5px;
 }
+
+
   
+/*#screen {
+  height: 100%;
+  width: 100%;
+  line-height: 100%;
+  text-align: center;
+  position: absolute;
+}*/
+
+#screen-button {
+  vertical-align: middle;
+}
+
 #pbar-container {
   background-color: rgb(70, 70, 70);
 }
@@ -80,7 +108,7 @@ video {
 
 
 #time-field {
-  color: aqua;
+  color: rgb(100, 100, 100 );
   cursor: default;
 }
 #sound-button {
@@ -93,12 +121,14 @@ video {
   height: 5px;
   background-color: rgb(70, 70, 70);
 }
-#full-screen {
-  float: right;
-}
+
 
 #sbar {
   height: 100%;
-  width: 0%;
+  width: 100%;
   background-color: aqua;
+}
+
+#full-screen {
+  float: right;
 }
